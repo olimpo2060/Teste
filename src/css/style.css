@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  color: #003366;
+}
+
+/* Painel de Status */
+#painel-status {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 750px;
+  margin: 0 auto 25px auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+#contador {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #003366;
+}
+
+#mensagem {
+  margin-top: 8px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Grid da Vitrine */
+.vitrine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Cards da Vitrine */
+.card-item {
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Destaque ao passar o mouse */
+.card-item:hover {
+  border-color: #003366;
+  background-color: #eef5fc;
+  transform: translateY(-4px);
+}
+
+.card-item h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.card-item p {
+  color: #28a745;
+  font-weight: bold;
+}
